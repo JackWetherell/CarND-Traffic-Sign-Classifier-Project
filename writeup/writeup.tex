@@ -24,7 +24,7 @@ urlcolor=blue}
 
 
 \begin{center}
-\textbf{Project 3: Traffic Sign Classification - Jack Wetherell} \\
+\textbf{Traffic Sign Classification - Jack Wetherell} \\
 \end{center}
 
 
@@ -36,7 +36,7 @@ The goals of this project were the following:
 \item Design, train and test a deep-learning model architecture in order to classify the traffic signs.
 \item Use the model to make predictions on new images, and  analyse the softmax probabilities of the new images.
 \end{itemize}
-The project notebook \texttt{(project.ipynb)} contains the source code of this implementation, as well as the results. In addition there are also pdf copies of this notebook available. 
+The project notebook contains the source code of this implementation, as well as the results. In addition there are also pdf copies of this notebook available. 
 In the next sections I will cover how each of the rubric points have been addressed in this work.
 
 \section{Data Set Summary and Exploration }
@@ -51,7 +51,7 @@ I used the python standard library module \texttt{pickle} to load the provided d
 I used \texttt{pandas} to import the csv if class labels and used this to creat a dictionary object to convert between class index (int) and class label (string). Next I visualised 25 random training examples, plotting the image along with the class label in each case (Figure 1a). Next, I plotted the distributions of each class in the train, validation and test sets respectively (Figure 1b) . In order to ensure the train, validation, test split was done correctly, and without any bias, I ensured that the relative count of each of the classes fell on a straight line, to ensure no occurrence bias is present in the splitting (Figure 1c).
 \begin{figure}
 \centering
-\includegraphics[scale=0.4]{results/fig1.pdf}
+\includegraphics[scale=0.4]{../results/fig1.pdf}
 \caption{Data set summary and exploration. Panel a shows 25 random images and respective class labels from the training set. Panel b shows the distributions of the 43 classes within each of the train (blue), validation (yellow) and test (green) sets. Panel 3 shows the plots of the counts of each of the 43 classes for the test, train and validation sets relative to each other, showing they are correctly proportioned.}
 \end{figure}
 \newpage
@@ -93,7 +93,7 @@ The final hyper-parameters of the model are: \texttt{EPOCHS = 50, BATCH\_SIZE = 
 \section{Testing the model on new images}
 In order to test the model on some new images, I 'drove' around Dresden using Google Street view, and took some screen-shots containing street signs. I used \texttt{opencv} to pre-process the images, extracting the part of the image containing the street sign. I used the perspective transform technique from the lane line finding project. The results of this are shown in the figure 2. As can be seen it correctly categorised all five of the images:
 \begin{figure}
-\includegraphics[scale=0.2]{results/new.pdf}
+\includegraphics[scale=0.2]{../results/new.pdf}
 \caption{Results of applying the model to five signs found 'driving' around Dresden in Google Street View. All five of the signs are correctly classified. }
 \end{figure}
 The softmax values for each of these cases are 1.0, showing that the model has a high confidence in these predictions. The calculations of these, with the details, is shown in cell 13 of the project notebook.

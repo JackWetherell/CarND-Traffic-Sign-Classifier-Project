@@ -1,9 +1,27 @@
-# self-driving-car-traffic-signs-recognition
+# Traffic Signs Recognition
+
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 The goals of this project are the following: 
 - Load a provided dataset of labelled German traffic signs.
 - Explore, summarise and visualise the dataset. 
 - Design, train and test a deep-learning model architecture in order to classify the traffic signs.
 - Use the model to make predictions on new images, and analyse the softmax probabilities of the new images.
+![Demo](./demo.png)
 
-![Traffic Sign Classifier](./results/new.png?raw=true "")
+## Requirements
+
+- `numpy`
+- `scipy`
+- `pandas`
+- `sklearn`
+- `matplotlib`
+- `seaborn`
+- `opencv`
+- `jupyterlab`
+- `tensorflow v1`
+
+## Usage
+To run the pipeline simply launch and run the notebook:
+
+`jupyter lab`
